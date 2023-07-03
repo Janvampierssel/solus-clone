@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Solus Inc. Portfolio Website" />
     <meta name="keywords" content="portfolio solus web-design ui/ux" />
-    <title>SOLUS株式会社 | UI/UX Design Studio</title>
+    <title>CLONUS株式会社 | UI/UX Design Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/01e3537758.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,7 +26,7 @@
       type="images/png"
       href="https://storage.googleapis.com/production-os-assets/assets/204e25b1-e084-4b48-a390-665d5a0d7cad"
     />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
 
   <body>
@@ -32,13 +36,19 @@
       <div class="nav-placeholder"></div>
       <nav>
         <header class="nav-bar">
-          <h1 class="logo">SOLUS</h1>
+          <h1 class="logo">
+            <a href="#" class="link-hover-blue logo">CLONUS</a>
+          </h1>
           <div class="nav-link-and-button">
             <ul class="nav-bar-links">
-              <li id="link-active"><a href="feed.html">Feed</a></li>
-              <li><a href="studio.html">Studio</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li class="link-active">
+                <a href="feed.html" class="link-hover-blue">Feed</a>
+              </li>
+              <li><a href="studio.html" class="link-hover-blue">Studio</a></li>
+              <li>
+                <a href="services.html" class="link-hover-blue">Services</a>
+              </li>
+              <li><a href="blog.html" class="link-hover-blue">Blog</a></li>
             </ul>
             <button class="button-menu">Menu</button>
           </div>
@@ -49,52 +59,328 @@
         <section id="page-heading">
           <header id="page-heading-header">
             <h1 class="page-heading-text page-heading-text-h1">
-              Solus, inc.<br />
+              Clonus, inc.<br />
               Digital Design Studio.
               <h2 class="page-heading-text page-heading-text-h2">Feed</h2>
             </h1>
           </header>
-          <div id="page-heading-line"></div>
+          <div class="page-heading-line"></div>
           <nav>
-            <div id="page-heading-index">
-              <p id="index-text">INDEX</p>
-              <div id="index-list">
+            <div class="page-heading-index">
+              <p class="index-text">INDEX</p>
+              <div class="index-list">
                 <ul>
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Web</a></li>
-                  <li><a href="#">Past Clients</a></li>
+                  <li>
+                    <a href="#" class="link-hover-blue link-gray">Mobile</a>
+                  </li>
+                  <li><a href="#" class="link-hover-blue link-gray">Web</a></li>
+                  <li>
+                    <a href="#" class="link-hover-blue link-gray"
+                      >Past Clients</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
           </nav>
         </section>
 
-        <section class="image-carousel-section">
+        <section class="mobile-section">
           <div class="image-carousel-container">
             <div class="image-carousel-component">
               <div
                 class="image-carousel-image-container"
                 id="image-carousel-container-1"
               ></div>
+
               <div class="image-carousel-text">
-                <h3>YUTO IS FAT</h3>
+                <h3>MULTIPLATFORM</h3>
+                <p class="image-carousel-text-secondary">Haundry株式会社</p>
+                <div class="image-carousel-text-date-more">
+                  <p class="image-carousel-text-date">2022 - SEPTEMBER</p>
+                  <p class="image-carousel-text-more">
+                    <a href="#" class="link-carousel">
+                      SEE MORE
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                      ></i>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
+
             <div class="image-carousel-component">
               <div
                 class="image-carousel-image-container"
                 id="image-carousel-container-2"
               ></div>
+
               <div class="image-carousel-text">
-                <h3>SUPER FAT</h3>
+                <h3>IOS/ANDROID</h3>
+                <p class="image-carousel-text-secondary">BIBLICK株式会社</p>
+                <div class="image-carousel-text-date-more">
+                  <p class="image-carousel-text-date">2021 - JUNE</p>
+                  <p class="image-carousel-text-more">
+                    <a href="#" class="link-carousel">
+                      SEE MORE
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                      ></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-carousel-component">
+              <div
+                class="image-carousel-image-container"
+                id="image-carousel-container-3"
+              ></div>
+
+              <div class="image-carousel-text">
+                <h3>IOS</h3>
+                <p class="image-carousel-text-secondary">Tapect株式会社</p>
+                <div class="image-carousel-text-date-more">
+                  <p class="image-carousel-text-date">2022 - JULY</p>
+                  <p class="image-carousel-text-more">
+                    <a href="#" class="link-carousel">
+                      SEE MORE
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                      ></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-carousel-component">
+              <div
+                class="image-carousel-image-container"
+                id="image-carousel-container-4"
+              ></div>
+
+              <div class="image-carousel-text">
+                <h3>IOS</h3>
+                <p class="image-carousel-text-secondary">英雄株式会社</p>
+                <div class="image-carousel-text-date-more">
+                  <p class="image-carousel-text-date">2023 - MARCH</p>
+                  <p class="image-carousel-text-more">
+                    <a href="#" class="link-carousel">
+                      SEE MORE
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                      ></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="image-carousel-component">
+              <div
+                class="image-carousel-image-container"
+                id="image-carousel-container-5"
+              ></div>
+
+              <div class="image-carousel-text">
+                <h3>IOS/ANDROID</h3>
+                <p class="image-carousel-text-secondary">Sweeep株式会社</p>
+                <div class="image-carousel-text-date-more">
+                  <p class="image-carousel-text-date">2022 - SEPTEMBER</p>
+                  <p class="image-carousel-text-more">
+                    <a href="#" class="link-carousel">
+                      SEE MORE
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                      ></i>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section class="web-section">
+          <p id="web-text">WEB</p>
+
+          <div class="web-container">
+            <div class="image-carousel-container">
+              <div class="image-carousel-component">
+                <a href="#">
+                  <div
+                    class="image-carousel-image-container"
+                    id="image-carousel-container-web-1"
+                  ></div>
+                </a>
+                <div class="image-carousel-text">
+                  <h3>MULTIPLATFORM</h3>
+                  <p class="image-carousel-text-secondary">株式会社JUNOMONA</p>
+                  <div class="image-carousel-text-date-more">
+                    <p class="image-carousel-text-date">2021 - JUNE</p>
+                    <p class="image-carousel-text-more">
+                      <a href="#" class="link-carousel">
+                        SEE MORE
+                        <i
+                          class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                        ></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="image-carousel-component">
+                <div
+                  class="image-carousel-image-container"
+                  id="image-carousel-container-web-2"
+                ></div>
+                <div class="image-carousel-text">
+                  <h3>IOS/ANDROID</h3>
+                  <p class="image-carousel-text-secondary">
+                    情報ネット株式会社
+                  </p>
+                  <div class="image-carousel-text-date-more">
+                    <p class="image-carousel-text-date">2022 - OCTOBER</p>
+                    <p class="image-carousel-text-more">
+                      <a href="#" class="link-carousel">
+                        SEE MORE
+                        <i
+                          class="fa-solid fa-arrow-up-right-from-square fa-xs"
+                        ></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="client-section">
+          <table>
+            <tr>
+              <th scope="col">NAME</th>
+              <th scope="col">TYPE</th>
+              <th scope="col">YEAR</th>
+            </tr>
+            <tr>
+              <td>ライオン株式会社</td>
+              <td>Prototype</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>株式会社アプレ</td>
+              <td>Multi Platform</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>サインズ株式会社</td>
+              <td>iOS</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>株式会社MCLOUD</td>
+              <td>iOS/Android</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>NTTファイナンス株式会社</td>
+              <td>Android</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>株式会社ネクストスケープ</td>
+              <td>iOS/Android</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>rayout株式会社</td>
+              <td>iOS</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <td>株式会社プリンツ21</td>
+              <td>Web</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>株式会社JUNOMONA</td>
+              <td>Multi Platform</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>BIBLICK株式会社</td>
+              <td>iOS</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>株式会社Haundry</td>
+              <td>Multi Platform</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>株式会社クライスネット...</td>
+              <td>iOS</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>株式会社キンダーガーデン</td>
+              <td>Multi Platform</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>株式会社Catallaxy</td>
+              <td>Multi Platform</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>株式会社BALLAS</td>
+              <td>Web</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>情報ネット株式会社</td>
+              <td>Web</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>sweeep株式会社</td>
+              <td>Multi Platform</td>
+              <td>2022</td>
+            </tr>
+          </table>
+        </section>
+
+        <div class="divider"><p id="client-footer-text">+30社以上</p></div>
       </main>
 
       <footer>
-        <small>&copy;This is my footer</small>
+        <div class="letschat-index">
+          <p class="footer-heading-text">
+            Clonus, inc. <br />
+            Based in Sydney. <br />
+            <a href="#" class="link-letschat link-hover-blue">Let's Chat</a>
+          </p>
+
+          <ul class="index-list footer-heading-index">
+            <li><a href="#" class="link-hover-blue link-active">Feed</a></li>
+            <li><a href="#" class="link-hover-blue link-gray">Studio</a></li>
+            <li><a href="#" class="link-hover-blue link-gray">Services</a></li>
+            <li><a href="#" class="link-hover-blue link-gray">Blog</a></li>
+            <li><a href="#" class="link-hover-blue link-gray">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright-behance">
+          <small>Copyright &copy; 2023 Clonus All Rights Reserved.</small>
+          <a href="" id="behance-link"
+            ><i class="fa-brands fa-behance fa-xl"></i
+          ></a>
+        </div>
       </footer>
     </div>
   </body>
