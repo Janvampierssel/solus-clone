@@ -1,5 +1,6 @@
-html {
+body {
   box-sizing: border-box;
+  overflow: hidden;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -32,7 +33,7 @@ a {
     height: 2px;
     width: 100vw;
     background-color: #292a2a;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-placeholder, .nav-bar {
@@ -49,6 +50,7 @@ a {
     justify-content: space-between;
     border-bottom: solid 1px #e9e9e9;
     padding: 0 24px;
+    z-index: 1
 }
 
 .nav-link-and-button {
@@ -124,11 +126,6 @@ h3 {
 #page-heading-header {
     height: 100%;
     padding: 0 24px;
-    border-bottom: solid 1px #e9e9e9;
-}
-
-.page-heading-line {
-    width: 100%;
     border-bottom: solid 1px #e9e9e9;
 }
 
@@ -357,4 +354,27 @@ small {
 
 .link-hover-blue:hover, #link-active a:hover, #behance-link:hover{
     color: #44cccc;
+}
+
+#loading-screen {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 100;
+    background-color: #f1f1f1;
+    font-family: "Inter", sans-serif;
+}
+
+.logo-container {
+    display: inline-block;
+    max-width: 20%;
+    text-align: center;
+}
+
+#loading-logo {
+    display: none;
 }

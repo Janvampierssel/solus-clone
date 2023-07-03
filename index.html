@@ -26,11 +26,17 @@
       type="images/png"
       href="https://storage.googleapis.com/production-os-assets/assets/204e25b1-e084-4b48-a390-665d5a0d7cad"
     />
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
   </head>
 
-  <body>
+  <body onload="loadScreen()">
     <div class="top-screen-line"></div>
+
+    <div id="loading-screen">
+      <div class="logo-container">
+        <p class="logo" id="loading-logo">CLONUS, INC.</p>
+      </div>
+    </div>
 
     <div id="container">
       <div class="nav-placeholder"></div>
@@ -64,7 +70,6 @@
               <h2 class="page-heading-text page-heading-text-h2">Feed</h2>
             </h1>
           </header>
-          <div class="page-heading-line"></div>
           <nav>
             <div class="page-heading-index">
               <p class="index-text">INDEX</p>
